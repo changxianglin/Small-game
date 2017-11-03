@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>testLog</title>
+  </head>
+  <body>
+    <h1>test log to console.log</h1>
+    <div class="">
+      <img src="1.gif" alt="">
+    </div>
+    <textarea name="name" id = "showLog" rows="8" cols="80"></textarea>
+    <script type="text/javascript">
+      var hit = function() {
+        var img = document.querySelector("img")
+        img.addEventListener("mousedown", function(event) {
+          console.log(event.target)
+        })
+      }
+      hit()
+    </script>
+  </body>
+</html>
